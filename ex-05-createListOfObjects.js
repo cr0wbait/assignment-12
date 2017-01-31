@@ -6,17 +6,19 @@
 // corresponding value
 
 function createListOfObjects (stuffRA){
-  var stuff = 'allmine'
+var stuff = [];
+  for (i=0; i<stuffRA.length;i++){
+    var stuffOb = {
+      firstName: ,
+      lastName: ,
+    };
+
+
+
+
+  }
   return stuff
 }
-
-
-
-
-
-
-
-
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 
 var realNinjas = [

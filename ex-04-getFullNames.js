@@ -4,13 +4,12 @@
 // of objects with first and last names and returns an array
 // of strings, where each string is a customer's full name.
 
-function getFullNames (obsRA){
-
-
-
-
-
-
+function getFullNames (objRA){
+  var finStrRA = [];
+  for (i=0;i<objRA.length;i++){
+    var nameStr = objRA[i].first + " " + objRA[i].last
+    finStrRA.push(nameStr)
+  }
   return finStrRA
 }
 
