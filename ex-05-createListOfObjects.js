@@ -9,12 +9,9 @@ function createListOfObjects (stuffRA){
 var stuff = [];
   for (i=0; i<stuffRA.length;i++){
     var stuffOb = {
-      firstName: ,
-      lastName: ,
+      firstName: stuffRA[0],
+      lastName: stuffRA[1],
     };
-
-
-
 
   }
   return stuff

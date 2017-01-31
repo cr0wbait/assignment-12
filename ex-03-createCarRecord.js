@@ -24,17 +24,19 @@ function createCarRecord (one,two,three,four){
     ['license']: four,
   }
 
-if (one==='' || two==='' || three==='' || four===''){
-  stuff = 'new record must have make, model, year, and license values'
-} else if (typeof stuff.make !== 'string' || typeof stuff.model !== 'string' || typeof stuff.license !== 'string'){
-  stuff = '1st, 2nd, and 4th arguments must be String'
-} else if (typeof stuff.year !== 'number'){
-  stuff = '3rd argument must be a Number'
-} else {
+  if (!one || !two || !three || !four){
+    stuff = 'new record must have make, model, year, and license values'
 
-return stuff
-
+  } else {
+    if (typeof stuff.make !== 'string' || typeof stuff.model !== 'string' || typeof stuff.license !== 'string'){
+      stuff = '1st, 2nd, and 4th arguments must be String'
+    }else {
+      if (typeof stuff.year !== 'number'){
+        stuff = '3rd argument must be a Number'
+      }
+    }
   }
+  return stuff
 }
 
 
