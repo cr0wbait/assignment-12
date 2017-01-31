@@ -5,13 +5,18 @@
 // that each have the property `firstName` and `lastName` and
 // corresponding value
 
+
+// Borked.//
+
+
 function createListOfObjects (stuffRA){
-var stuff = [];
+  var stuff = [];
   for (i=0; i<stuffRA.length;i++){
     var stuffOb = {
-      firstName: stuffRA[0],
-      lastName: stuffRA[1],
+      firstName: stuffRA[i],
+      lastName: stuffRA[i],
     };
+    stuff.push(stuffOb)
 
   }
   return stuff
